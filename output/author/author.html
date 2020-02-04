@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Pandanistas - Articles by Author</title>
+        <meta charset="utf-8" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Pandanistas <strong></strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="/tags">tags</a></li>
+            <li><a href="/pages/example-page.html">example page</a></li>
+            <li><a href="/category/another-category.html">another-category</a></li>
+            <li><a href="/category/sprints.html">sprints</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>Articles by Author</h2>
+
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="/pandas-sprint.html" rel="bookmark" title="Permalink to pandas sprint">pandas sprint</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-08-22T00:00:00+02:00"> Wed 22 August 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="/author/author.html">Author</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <h2>What is it</h2> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="/a-post-with-code-blocks.html" rel="bookmark" title="Permalink to A post with code blocks">A post with code blocks</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-08-21T00:00:00+02:00"> Tue 21 August 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="/author/author.html">Author</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <h2>Python Code block</h2>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">my_handler</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Received event: &quot;</span> <span class="o">+</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">handle</span><span class="p">(</span><span class="n">event</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">])</span>
+</pre></div>
+
+
+<h2>JSON code block</h2>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="nt">&quot;update_id&quot;</span><span class="p">:</span> <span class="mi">8888</span><span class="p">,</span>
+    <span class="nt">&quot;message&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;chat&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;first_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Matt&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">put_your_id_here</span><span class="p">,</span>
+        <span class="nt">&quot;last_name&quot;</span><span class="p">:</span> <span class="s2">&quot;McManus&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;private&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rolename&quot;</span><span class="p">:</span> <span class="s2">&quot;mcman_s&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="mi">1453851465</span><span class="p">,</span>
+    <span class="nt">&quot;from&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;first_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Matt&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="err">put_your_id_here</span><span class="p">,</span>
+        <span class="nt">&quot;last_name&quot;</span><span class="p">:</span> <span class="s2">&quot;McManus&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;rolename&quot;</span><span class="p">:</span> <span class="s2">&quot;mcman_s&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;message_id&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="nt">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;/start …</span></pre></div> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>

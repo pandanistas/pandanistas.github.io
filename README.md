@@ -25,4 +25,4 @@ or
 make serve
 ```
 
-Theme is based on <https://github.com/mc-buckets/brutalistpelican/>
+Theme is based on <https://github.com/mc-buckets/brutalistpelican/>.

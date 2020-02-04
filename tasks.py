@@ -90,7 +90,7 @@ def livereload(c):
         content_blob = '{0}/**/*{1}'.format(SETTINGS['PATH'], extension)
         server.watch(content_blob, lambda: build(c))
     # Watch the theme's templates and static assets
-    theme_path = SETTINGS['THEME']
+    theme_path = SETTINGS['THEMES']
     server.watch('{}/templates/*.html'.format(theme_path), lambda: build(c))
     static_file_extensions = ['.css', '.js']
     for extension in static_file_extensions:

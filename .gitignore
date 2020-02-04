@@ -42,7 +42,6 @@ Thumbs.db
 __pycache__/
 *.pyc
 .vscode/
-/output
 develop_server.sh
 blog.code-workspace
 

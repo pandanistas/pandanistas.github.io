@@ -35,7 +35,7 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 # Theme Settings
-THEME = 'themes/brutalist'
+THEME = 'themes/brutalist_2'
 ## used for OG tags and Twitter Card data on index page
 SITEIMAGE = 'site-cover.jpg'
 ## used for OG tags and Twitter Card data of index page

@@ -6,7 +6,6 @@
  * *
  * ***********************
  * */
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:900);
 /* MIXINS */
 .highlight {
   background: #f8f8f8;
@@ -633,7 +632,6 @@ footer p {
   margin: 0 2em;
 }
 .page-title h1 {
-  font-family: "Work Sans", sans-serif;
   font-size: 3em;
   padding-bottom: 0.75em;
   padding-top: 1.5em;

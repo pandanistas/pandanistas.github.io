@@ -1,1 +1,1 @@
-title: Code of Conduct
+title: code of conduct

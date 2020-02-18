@@ -58,6 +58,7 @@ FIRST_NAME = 'pandanistas'
 #MENUITEMS = [('tags', '/tags')]
 ## Social icons for footer
 TWITTER = 'https://twitter.com/pandanistas'
+GITHUB = 'https://github.com/pandanistas'
 
 # Layout
 DISPLAY_CATEGORIES_ON_MENU = False

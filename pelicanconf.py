@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Author'
-SITENAME = 'Pandanistas'
+AUTHOR = 'pandanistas'
+SITENAME = 'pandanistas'
 SITEURL = ''
 
 PATH = 'content'
@@ -55,8 +55,17 @@ FIRST_NAME = 'pandanistas'
 # ATTRIBUTION = True
 ## Add a link to the tags page to the menu
 ## Other links can be added following the same tuple pattern 
-MENUITEMS = [('tags', '/tags')]
+#MENUITEMS = [('tags', '/tags')]
 ## Social icons for footer
-## Set these to whatever your unique public URL is for that platform
-## I've left mine here as a example
-TWITTER = 'https://twitter.com/'
+TWITTER = 'https://twitter.com/pandanistas'
+
+# Layout
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
+
+MENUITEMS = (
+   ('about us', '/pages/about-us.html'),
+   ('code of conduct', '/pages/code-of-conduct.html'),
+   ('resources', '/pages/resources.html'),
+   ('contact us', '/pages/contact-us.html')
+)

@@ -32,7 +32,7 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # Theme Settings
 THEME = 'themes/brutalist_2'
@@ -41,9 +41,9 @@ SITEIMAGE = 'site-cover.jpg'
 ## used for OG tags and Twitter Card data of index page
 SITEDESCRIPTION = 'pandanistas website.'
 ## path to favicon
-# FAVICON = 'pelly.png'
+#FAVICON = 'pandanistas_logo.png'
 ## path to logo for nav menu (optional)
-# LOGO = 'pelly.png'
+LOGO = 'pandanistas_logo_long.png'
 ## first name for nav menu if logo isn't provided
 FIRST_NAME = 'pandanistas'
 ## google analytics (fake code commented out)
@@ -69,3 +69,7 @@ MENUITEMS = (
    ('resources', '/pages/resources.html'),
    ('contact us', '/pages/contact-us.html')
 )
+
+# # PLUGINS
+# PLUGIN_PATHS = ['plugins']
+# PLUGINS = ['optimize_images']

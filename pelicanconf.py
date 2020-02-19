@@ -67,12 +67,12 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 
 MENUITEMS = (
-   ('about us', '/pages/about-us.html'),
+   ('about', '/pages/about.html'),
    ('blog', '/category/blog.html'),
    ('sprints', '/category/sprints.html'),
    ('code of conduct', '/pages/code-of-conduct.html'),
    ('resources', '/pages/resources.html'),
-   ('contact us', '/pages/contact-us.html')
+   ('contact', '/pages/contact.html')
 )
 
 # # PLUGINS

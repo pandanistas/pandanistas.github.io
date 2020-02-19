@@ -1,3 +1,3 @@
-title: about us
+title: about
 
 We are ...

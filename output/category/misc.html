@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          <title>pandanistas</title>
+        <title>pandanistas</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="pandanistas Full Atom Feed" />
+        <link href="/feeds/{slug}.atom.xml" type="application/atom+xml" rel="alternate" title="pandanistas Categories Atom Feed" />
         <!-- twitter card metadata -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="/images/pandanistas_logo_long.png">
-<meta name="twitter:site" content="">
-<meta name="twitter:title" content="contact us">
-<meta name="twitter:description" content="">
         <!-- OG Tags -->
-<meta property="og:url" content="/pages/contact-us.html"/>
-<meta property="og:title" content="pandanistas | contact us" />
-<meta property="og:description" content="" />
+<meta property="og:url" content="/category/misc"/>
+<meta property="og:title" content="pandanistas | misc" />
         <!-- favicon -->
         <!-- moment.js for date formatting -->
         <script src="/theme/js/moment.js"></script>
@@ -43,9 +38,6 @@
                     });
             };
         </script>
-
-
-
 </head>
 <body>
     <div role="banner" id="masthead">
@@ -55,8 +47,7 @@
             <nav id="menu">
                 <ul>
                         <li><a href="/pages/about-us.html">about us</a></li>
-                        <li><a href="/category/blog.html">blog</a></li>
-                        <li><a href="/category/sprints.html">sprints</a></li>
+                        <li><a href="/blog">blog</a></li>
                         <li><a href="/pages/code-of-conduct.html">code of conduct</a></li>
                         <li><a href="/pages/resources.html">resources</a></li>
                         <li><a href="/pages/contact-us.html">contact us</a></li>
@@ -65,23 +56,40 @@
         </header>
     </div>
         <div class="page" role="main">
-  <div class="article" role="article">
-    <article>
-        <header>
-          <h2>
-            contact us
-          </h2>
-        </header>
-      <div class="content">
-         <p>Contact us at <a href="mailto:contact@pandanistas.org">contact@pandanistas.org</a></p>
-      </div>
-      <div class="back-to-top">
-          <a href="#top">back to top</a>
-      </div>
-    </article>
-  </div>
-<!-- end article -->
-                <footer>
+<div class="page-title">
+    <h1>misc</h1>
+</div>
+<div class="articles">
+        <ol>
+            <li>
+                <article>
+                    <footer>
+                         <p>
+                            <time datetime="2020-02-19 00:00:00+01:00">
+                                <script>document.write(moment('2020-02-19 00:00:00+01:00').format('LL'));</script>
+                            </time>
+                                    in <a href="/category/misc.html"><span class="category-tag">misc</span></a>
+                        </p>
+                    </footer>
+                    <header>
+                        <a href="/first-post.html">
+                            <h2>first post</h2>
+                        </a>
+                    </header>
+                    <div class="summary"> </div>
+                    <div class="tags">
+                        <ul class="tags">
+                            <li><a href="/tag/blog.html" class="tag">blog</a></li>
+                        </ul>
+                    </div>
+                    <a href="/first-post.html">
+                        <p class="readmore">Read more...</p>
+                    </a>
+                </article>
+            </li>
+        </ol>
+        
+</div>                <footer>
                     <div class="icons">
                         <a href="https://twitter.com/pandanistas" target="_blank"><div class="icon-twitter icon"></div></a>
                         <a href="https://github.com/pandanistas" target="_blank"><div class="icon-github icon"></div></a>

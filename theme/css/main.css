@@ -652,7 +652,8 @@ footer p {
 }
 
 .icons {
-  margin: 2em auto;
+  /* margin: 2em auto; */
+  margin-top: 200px;
 }
 
 /* DISQUS COMMENTS */

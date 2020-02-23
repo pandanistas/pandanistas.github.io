@@ -70,7 +70,7 @@ MENUITEMS = (
    ('about', '/pages/about.html'),
    ('blog', '/category/blog.html'),
    ('sprints', '/category/sprints.html'),
-   ('code of conduct', '/pages/code-conduct.html'),
+   ('code of conduct', '/pages/code-of-conduct.html'),
    ('resources', '/pages/resources.html'),
    ('contact', '/pages/contact.html')
 )

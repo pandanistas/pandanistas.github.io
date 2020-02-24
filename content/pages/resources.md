@@ -5,7 +5,7 @@ title: resources
 - Get familiar with the [pandas repository](https://github.com/pandas-dev/pandas).
 - Read Galuh Sahid's three-part blogpost series on [making your first open source contribution](https://galuh.me/posts/contributing-os-pt-1/).
 
-## If you want to make a contribution on pandas documentation...
+## If you want to contribute to pandas documentation...
 - Read the [pandas docstrings guide](https://dev.pandas.io/docs/development/contributing_docstring.html#docstring).
 - Get familiar with [docstring validation in pandas](https://github.com/pandanistas/docstring_notebooks/wiki/Docstrings).
 - Read examples of [docstring errrors](https://github.com/pandanistas/docstring_notebooks/wiki/Docstring-Errors-Examples).

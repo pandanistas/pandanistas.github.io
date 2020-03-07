@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = 'Author'
-SITENAME = 'Pandanistas'
+AUTHOR = 'pandanistas'
+SITENAME = 'pandanistas'
 SITEURL = ''
 
 PATH = 'content'
+STATIC_PATHS = ['images', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
 TIMEZONE = 'Europe/Paris'
 
@@ -32,18 +34,18 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+#RELATIVE_URLS = True
 
 # Theme Settings
-THEME = 'themes/brutalist'
+THEME = 'themes/brutalist_2'
 ## used for OG tags and Twitter Card data on index page
 SITEIMAGE = 'site-cover.jpg'
 ## used for OG tags and Twitter Card data of index page
 SITEDESCRIPTION = 'pandanistas website.'
 ## path to favicon
-# FAVICON = 'pelly.png'
+#FAVICON = 'pandanistas_logo.png'
 ## path to logo for nav menu (optional)
-# LOGO = 'pelly.png'
+LOGO = 'pandanistas_logo_long.png'
 ## first name for nav menu if logo isn't provided
 FIRST_NAME = 'pandanistas'
 ## google analytics (fake code commented out)
@@ -55,8 +57,24 @@ FIRST_NAME = 'pandanistas'
 # ATTRIBUTION = True
 ## Add a link to the tags page to the menu
 ## Other links can be added following the same tuple pattern 
-MENUITEMS = [('tags', '/tags')]
+#MENUITEMS = [('tags', '/tags')]
 ## Social icons for footer
-## Set these to whatever your unique public URL is for that platform
-## I've left mine here as a example
-TWITTER = 'https://twitter.com/'
+TWITTER = 'https://twitter.com/pandanistas'
+GITHUB = 'https://github.com/pandanistas'
+
+# Layout
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
+
+MENUITEMS = (
+   ('about', '/pages/about.html'),
+   ('blog', '/category/blog.html'),
+   ('sprints', '/category/sprints.html'),
+   ('code of conduct', '/pages/code-of-conduct.html'),
+   ('resources', '/pages/resources.html'),
+   ('contact', '/pages/contact.html')
+)
+
+# # PLUGINS
+# PLUGIN_PATHS = ['plugins']
+# PLUGINS = ['optimize_images']

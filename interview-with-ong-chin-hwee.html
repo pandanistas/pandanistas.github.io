@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <title>pandanistas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8" />
+        <!-- twitter card metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="/images/pandanistas_logo_long.png">
+<meta name="twitter:site" content="">
+<meta name="twitter:title" content="Interview with Ong Chin Hwee">
+<meta name="twitter:description" content="pandanistas is running a series of interviews where we interview contributors to the pandas library. Read our first interview featuring Ong Chin Hwee, one of the contributors to pandas' 1.0 release.">
+        <!-- OG Tags -->
+<meta property="og:url" content="/interview-with-ong-chin-hwee.html"/>
+<meta property="og:title" content="pandanistas | Interview with Ong Chin Hwee" />
+<meta property="og:description" content="pandanistas is running a series of interviews where we interview contributors to the pandas library. Read our first interview featuring Ong Chin Hwee, one of the contributors to pandas' 1.0 release." />
+        <!-- favicon -->
+        <!-- moment.js for date formatting -->
+        <script src="/theme/js/moment.js"></script>
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="/theme/css/main.css" />
+		<script>
+			
+                /*! grunt-grunticon Stylesheet Loader - v2.1.2 | https://github.com/filamentgroup/grunticon | (c) 2015 Scott Jehl, Filament Group, Inc. | MIT license. */
+    
+    (function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),l=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||null,l.parentNode.insertBefore(i,l),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,l=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&l?0:e?1:2];n.method=e&&l?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var l=0;n.length>l;l++)o=n[l].cssText,a=r+n[l].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
+                
+                grunticon(["/theme/css/icons.data.svg.css", "/theme/css/icons.data.png.css", "/theme/css/icons.fallback.css"]);
+            </script>
+        <noscript><link href="/theme/css/icons.fallback.css" rel="stylesheet"></noscript>
+        <!-- menu toggle javascript -->
+        <script type="text/javascript">
+            document.addEventListener("DOMContentLoaded", initMenu);
+            
+            function initMenu(){
+                var menu = document.getElementById("menu");
+                var menulink = document.getElementById("menu-link");
+                menulink.addEventListener("click", function toggleMenu(){
+                        window.event.preventDefault();
+                        menulink.classList.toggle('active');
+                        menu.classList.toggle('active');              
+                    });
+            };
+        </script>
+
+    <meta name="description" content="pandanistas is running a series of interviews where we interview contributors to the pandas library. Read our first interview featuring Ong Chin Hwee, one of the contributors to pandas' 1.0 release." />
+
+    <meta name="tags" content="interview" />
+
+</head>
+<body>
+    <div role="banner" id="masthead">
+        <header>
+            <a href="/"><img src="/images/pandanistas_logo_long.png" alt="McManus Logo"></a>
+            <a href="#menu" id="menu-link">more stuff</a>
+            <nav id="menu">
+                <ul>
+                        <li><a href="/pages/about.html">about</a></li>
+                        <li><a href="/category/blog.html">blog</a></li>
+                        <li><a href="/category/sprints.html">sprints</a></li>
+                        <li><a href="/pages/code-of-conduct.html">code of conduct</a></li>
+                        <li><a href="/pages/resources.html">resources</a></li>
+                        <li><a href="/pages/contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+        <div class="page" role="main">
+  <div class="article" role="article">
+    <article>
+        <footer>
+            <a name="top"></a>
+            <p>
+              <time datetime=" 2020-03-07 00:00:00+01:00">
+                <script>document.write(moment('2020-03-07 00:00:00+01:00').format('LL'));</script>
+              </time>
+            </p>
+        </footer>
+        <header>
+          <h2>
+            Interview with Ong Chin Hwee
+          </h2>
+        </header>
+      <div class="content">
+         <p>pandanistas is running a series of interviews where we interview contributors to the <a href="https://github.com/pandas-dev/pandas/">pandas</a> library, especially those coming from underrepresented communities. We hope that this could encourage more people, especially from underrepresented communities, to make their first contributions to pandas.</p>
+<p>For our first interview, we're super excited to be talking to Chin Hwee who had her contribution to pandas documentation included in the <a href="https://pandas.pydata.org/pandas-docs/version/1.0.0/whatsnew/index.html">pandas 1.0 release</a>. You can find out more about her through her <a href="https://ongchinhwee.me/">blog</a> and <a href="https://twitter.com/ongchinhwee">follow her on Twitter</a>.</p>
+<p>If you know someone that you think we should interview, or if you have a story that you would like to share, don't hesitate to <a href="/pages/contact.html">reach out to us</a>! We would love to hear from you.</p>
+<p><strong>Hi Chin Hwee! It’s nice to be able to get to know you! Can you tell us a little bit about yourself?</strong></p>
+<p>I am a born-and-bred Singaporean Chinese who loves food, aviation and music, in no particular order. Before my current role as a Data Engineer, I majored in Aerospace Engineering with a minor in Business for my undergraduate degree at Nanyang Technological University on a scholarship, worked as a Research Assistant at Rolls-Royce@NTU Corporate Laboratory for around 2 years, and went on to pursue a Masters in Mechanical Engineering with specialization in Computation and Modeling at National University of Singapore. I graduated with Honors for my MBA from Quantic School of Business and Technology (formerly Smartly Institute) in November 2019, and I hope to make use of technology and business knowledge to contribute positively to the community.</p>
+<p>I learnt C during my freshman year, realised I’m pretty decent at it, and subsequently picked up MATLAB, C++ and Python on my own. Currently, I write a lot more Python code for my work and personal projects, since Python is primarily used in the data community and requires less lines of code.</p>
+<p>Outside of working hours, I attend local tech meetups and volunteer as a mentor with BigDataX, a data community in Singapore that aims to build literacy in data engineering through conducting hands-on workshops. Since August 2019, I have also started speaking at meetups and regional conferences - in fact, I am excited to be speaking at FOSSASIA Summit 2020, which will be held on 19 - 21 March 2020 at Lifelong Learning Institute in Singapore. </p>
+<p><strong>Can you tell us about your first contribution to pandas?</strong></p>
+<p>My first contribution to pandas is improving the documentation for MultiIndex.set_levels to clarify that the <code>.set_levels()</code> function interprets passed values as new components of the <code>.levels</code> attribute and stores the passed values - even if the number of values passed for any of the levels is more than its existing length.</p>
+<p><strong>What made you decide to contribute to pandas?</strong></p>
+<p>I use pandas frequently in my data analytics projects, mainly for data manipulation, cleaning and analysis to extract insights from raw data. To help in my daily work, I refer to the pandas documentation to figure out which methods to use for data manipulation - be it filtering data tables with specified conditions or setting MultiIndex for multidimensional analysis. However, like most developers, I end up finding my answers on StackOverflow first instead of the documentation - reading the documentation became more of a hindsight. While I don’t feel entirely comfortable pulling answers from StackOverflow without understanding how the functions and internals work, we had to get work done.</p>
+<p>After my first conference talk in August 2019, I was brainstorming on different ways to contribute back to the tech community that empowered me as a data engineer. One of my work projects requires multidimensional data analysis to track patterns within the data, and I was exploring the use of hierarchical indexing (MultiIndex) for that particular project. While I was looking through issues on Python libraries to find something to contribute, I came across an issue relating to the pandas documentation which was tagged with ‘MultiIndex’. I thought, why not take this opportunity to contribute to the library that supports the core part of my data analytics work while learning how MultiIndex actually works? It’s going to help me with my work, help fellow users with their work, and save a lot more future agony associated with not understanding how the function works.</p>
+<p><strong>We guess something that a lot of to-be contributors can relate to is the fear that we may not know enough to make a first contribution. Did you have these thoughts? And if so, how did you overcome them?</strong></p>
+<p>Thoughts of not knowing enough to make a first contribution? Yes, I did have them - I was trawling repositories on Github looking for issues that are not yet being worked on by other contributors. In fact, I was hovering around the pandas issue for a few days before I decided to turn on my “F*ck It” mentality and raise my hand (virtually) to ask if I could work on the issue. After all, I have nothing to lose from asking - contributors start out by making their first contributions to the project; they do not start out knowing everything about the codebase of the project.</p>
+<p><strong>Which knowledge you think was necessary for making the contribution to pandas?</strong></p>
+<p>Firstly, you do need to know how to work with version control, Git and GitHub, and best practices when working in a team - you're working in a team with many contributors who are working on loads of pull requests. That being said, there's a contributing guide that helps a lot when making the contribution. Git might not be the easiest thing to learn, but there are people who would be willing to help you out if you ask for it.</p>
+<p>Another point I would like to highlight is that you do not need to understand every single operation or feature in pandas; knowing how to use some pandas operations is good enough knowledge to start contributing to pandas.</p>
+<p><strong>What things did you learn while making your first contribution to pandas?
+</strong>
+An important learning point I learnt while making my first contribution to pandas is that it is important to understand how the operation you're working on (be it code, documentation etc.) works behind the hood to perform the operation on the object, and why the operation is designed to follow certain behavior that changes the object properties. Implementing a sequence of pandas operations to transform and analyse the data might seem to be something we do as part of our data analytics work, but understanding the fundamental concepts behind the operations is more important when working on the contribution to pandas.</p>
+<p>Let's take the <code>MultiIndex.set_levels()</code> operation for example. We use <code>set_levels()</code> to define the levels property of the <code>MultiIndex</code> (to be more specific, the level labels that identify a subgroup of the data), and all the values passed through <code>set_levels()</code> are stored in the <code>MultiIndex</code> levels even if not all the values are used. The levels property could be fairly easily confused with the names property in <code>MultiIndex</code> for typical pandas users, since we are "passing names to the levels" in a way. As we dig further into the definition for <code>MultiIndex</code> object properties, we learn that the names property in <code>MultiIndex</code> refers to the names for the levels themselves, not the (named) values of the levels - each level has a name and contains a list of values that can be used for indexing. </p>
+<p>Another important learning point is that contributing to the docs is one of the best ways to learn more about the project. You get started on a small segment of the codebase without breaking the code and add value to fellow users, which helps build up your confidence in contributing to the project. In addition, you are learning from the core contributors who do care a lot about the project and how the project is being used - what better way to learn more about the project than learning from the primary source?</p>
+<p><strong>How did you feel after your contribution was merged?</strong></p>
+<p>Pretty accomplished, I would say. Now I appreciate the docs more, knowing how much time and effort it took to improve the docs for a single function that I can't even find on StackOverflow.</p>
+<p>Another thing to mention is that when I shared the news on my Facebook news feed, someone commented on how much precious time had been wasted on trying to figure out how to use the <code>set_levels()</code> operation - and how the improved docs would help save more time for other pandas users. It feels great knowing that my contribution to the pandas docs would help fellow pandas users like myself save time on trying to find answers through search engines after failing to find them on the docs.</p>
+<p><strong>What’s the most exciting project that you’ve worked on using pandas?</strong></p>
+<p>Exploring seasonal insights on Singapore weather station data using pandas! It's a personal project that I'm passionate about, since I'm pretty concerned about global warming and extreme weather conditions which make me feel really unwell at times.</p>
+<p>I used the Requests library to extract 3 years of temperature and rainfall data from the Data.gov.sg APIs, converted the JSON to pandas DataFrames using a series of operations, and analysed the data trends and patterns to determine whether the weather is getting hotter and wetter than before. I first delivered a talk on my analysis at Open Up Summit 2019 at Taipei, and subsequently delivered a follow-up talk showing the full 3-year results at JuniorDevSG Code and Tell about 1.5 months later. The analysis results do indicate that year 2019 was indeed hotter than previous years on average, and our dry months are getting drier and wet months getting wetter, so we have to be prepared for more extreme weather in Singapore for the years ahead.</p>
+<p><strong>Let’s talk more about your work! You’re currently working as a data engineer in Singapore. Can you elaborate more about what you do?</strong></p>
+<p>I currently work as a data engineer within a data analytics team at a government-linked corporation in Singapore. I do a myriad of stuff that supports the data scientists in the data science process: data cleaning, data processing, data quality assessment, exploratory data analysis, solution deployment and delivery etc. Together with my fellow data engineer in the team, we support the chief architect in maintaining the operations of the on-premise development cloud which supports our data science workflows.</p>
+<p>I have been working on projects relating to aircraft systems and business processes, both of which are areas that I have some domain knowledge due to my background in aerospace engineering and business. I am looking to explore further into projects relating to other engineering systems with larger datasets, in order to develop myself not just as a data engineer but also as an engineering researcher who has the domain expertise and data skills to come up with sustainable solutions that benefit the community (myself included).</p>
+<p><strong>What’s the most enjoyable part of your work and what’s the most challenging part?</strong></p>
+<p>The most challenging part of my work is dealing with bad quality or limited data. I can learn how to use tools and libraries by referring to documentation and online resources, but there is little we could do when a significant portion of the data is either missing or invalid and there is no clear way of handling such data. After all, a common adage among data professionals is "garbage in, garbage out". If there are no other mathematical or physical models that we could fall back on to generate the data, there is nothing much we could do except to work on the limited data that are usable.</p>
+<p>It is also a challenge to explain to clients why we need certain types of data, and that comes with domain knowledge about the data analytics project. Having a sufficient domain-based understanding is needed to convince the client to work together with the project team to come up with an analytics plan that aims to alleviate their pain points. You don't need to know everything about the domain, because the client knows more than you about the domain and the domain knowledge is gained through years of work experience. However, you do need to read widely to gain a better understanding of the context of the project and to understand the potential benefits the project could bring to the client. It's about learning to have empathy for their pain points and working together to discover insights that they might not know without the help of advanced analytics, and that is the most enjoyable part of my work.</p>
+<p><strong>Any advice for people who are looking forward to making their first contribution in pandas?</strong></p>
+<p>Start with small fixes - even fixing typos in the docs are welcome improvements that contribute to the user experience of reading the docs. There are issues listed under "Docs" and "good first issue" which you can start out with - there are friendly maintainers in the project who would help label the issues to make identifying those "low-hanging fruits" easier for new contributors. Most importantly, when you start small and make small fixes that get merged into the project, you will slowly gain the confidence to work on more contributions in the future.</p>
+<p>Contributing to the docs is one of the best ways to get started - that's how Marc Garcia (<a href="https://twitter.com/datapythonista">@datapythonista</a>), a pandas core contributor, got started with contributing to pandas! Delving into the pandas codebase can seem quite daunting at first, but working on the docs for a subset of the codebase is very useful in enriching your understanding of the operations and getting familiarised with parts of the codebase.</p>
+<p>Don't feel too discouraged about not getting things right the first time round when making your first contribution. The pandas core contributors are your best mentors - they know a lot about the project and will be happy to guide you along your first pull request. I made a few mistakes here and there for my first contribution and messed up my branch, but I got some help from the contributors and managed to get my first contribution merged into the master branch in the end.</p>
+<p><strong>Thank you so much Chin Hwee for taking your time to chat with us!</strong></p>
+      </div>
+      <div class="back-to-top">
+          <a href="#top">back to top</a>
+      </div>
+    </article>
+  </div>
+<!-- end article -->
+                <footer>
+                    <div class="icons">
+                        <a href="https://twitter.com/pandanistas" target="_blank"><div class="icon-twitter icon"></div></a>
+                        <a href="https://github.com/pandanistas" target="_blank"><div class="icon-github icon"></div></a>
+                    </div>
+                    <p>© <script>document.write(moment().format('YYYY'));</script> pandanistas</p>
+                </footer>
+        </div>
+</body>
+</html>
